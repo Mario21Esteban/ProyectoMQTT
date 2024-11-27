@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/topicEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el tópico"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el mensaje"
+        android:layout_below="@id/topicEditText"
+        android:layout_marginTop="8dp"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/publishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:layout_below="@id/messageEditText"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/subscribeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suscribir"
+        android:layout_below="@id/publishButton"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/messagesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subscribeButton"
+        android:layout_marginTop="16dp"
+        android:text="Mensajes recibidos:"
+        android:textSize="16sp" />
+</RelativeLayout>
